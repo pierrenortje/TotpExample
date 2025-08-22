@@ -1,19 +1,19 @@
 ﻿@{
-	ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center" style="width:500px;margin:0 auto;">
-	<p>
-		<img id="imgQR" onerror="this.style.display='none'" width="250" height="250" /><br />
-		<input id="txbPassword" class="form-control" type="password" placeholder="Your password" style="margin-top: 20px" /><br />
-		<a id="btnEnroll" class="btn btn-primary" href="javascript:;">1. Enroll</a>
-	</p>
-	<p>
-		<hr style="margin: 20px 0" />
-	</p>
-	<p>
-		<input id="txbCode" class="form-control" type="text" placeholder="Verification code" /><br />
-		<a id="btnValidate" class="btn btn-primary" href="javascript:;">2. Validate</a><br />
-		<span id="spResult" style="margin-top: 20px"></span>
-	</p>
+    <p>
+        <img id="imgQR" onerror="this.style.display='none'" width="250" height="250" /><br />
+        <input id="txbPassword" class="form-control" type="password" placeholder="Your password" style="margin-top: 20px" /><br />
+        <a id="btnEnroll" class="btn btn-primary" href="javascript:;">1. Enroll</a>
+    </p>
+    <p>
+        <hr style="margin: 20px 0" />
+    </p>
+    <p id="secValidate" class="visually-hidden">
+        <input id="txbCode" class="form-control" type="text" placeholder="Verification code" /><br />
+        <a id="btnValidate" class="btn btn-primary" href="javascript:;">2. Validate</a><br />
+        <span id="spResult" style="margin-top: 20px"></span>
+    </p>
 </div>

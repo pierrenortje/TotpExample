@@ -12,6 +12,8 @@
         });
         var responseJson = await response.json();
         document.getElementById('imgQR').src = `data:image/png;base64,${responseJson.data.qrCode}`;
+
+        document.getElementById('secValidate').classList.remove('visually-hidden');
     });
 
     document.getElementById('btnValidate').addEventListener('click', async function () {
