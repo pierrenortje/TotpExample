@@ -24,7 +24,6 @@ namespace TotpExample.Helpers
             var qs = new Dictionary<string, string>
             {
                 ["secret"] = secretB32.TrimEnd('='),
-                ["issuer"] = issuer,
                 ["algorithm"] = algorithm.ToUpperInvariant(),
                 ["digits"] = digits.ToString(),
                 ["period"] = period.ToString()
